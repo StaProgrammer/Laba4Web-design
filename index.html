@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Головна сторінка</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="./images/Logo.svg" alt="expressparts4pc logo">
+            </div>
+            <div class="header-links">
+                <nav class="nav-header">
+                <ul class="nav-header-list">
+                    <li class="nav-header-link-text"><a href="#" target="_blank">Акції</a></li>
+                    <li class="nav-header-link-text"><a href="#" target="_blank">Доставка та оплата</a></li>
+                    <li class="nav-header-link-text"><a href="#" target="_blank">Відгуки</a></li>
+                    <li class="nav-header-link-icon">
+                        <div id="cart">
+                            <h2><ion-icon name="cart" id="cart-icon"></ion-icon></h2>
+                            <ul id="cart-list"></ul>
+                            <p id="total">Загальна сума: 0$</p>
+                            <button id="clear-cart">Очистити кошик</button>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-basket"></div>
+    </div>
+                    <main class="main">
+                        <form class="search">
+                            <label class="search-lable">
+                                <img class="search-icon" src="./images/search.svg" alt="search">
+                                <input class="searchInput" type="text" id="searchInput" placeholder="Введіть назву товару...">
+                            </label>
+                        </form>
+
+                        <div class="row">
+                            <div class="icon1" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="./images/tovar1.svg" alt="tovar1">
+                                        </div>
+                                        <div class="info">
+                                            <h3>SSD Seagate</h3>
+                                             <ul class="rating">
+                                                <li><ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                             </ul>
+                                            <div>
+                                                <div class="info-price"></div>
+                                            <span class="price">220$</span>
+                                            <button class="add-to-cart" onclick="addToCart({ name: 'SSD Seagate', price: 220 })">Додати до кошика</button>
+                                            </div>
+                            </div>
+                            <div class="icon2" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="./images/tovar2.svg" alt="tovar2">
+                                        </div>
+                                        <div class="info">
+                                            <h3>Intel Core i5-12500k</h3>
+                                             <ul class="rating">
+                                                <li><ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                             </ul>
+                                            <div>
+                                                <div class="info-price"></div>
+                                            <span class="price">277$</span>
+                                            <button class="add-to-cart" onclick="addToCart({ name: 'Intel Core i5-12500k', price: 277 })">Додати до кошика</button>
+                                            </div>
+                            </div>
+                            <div class="icon3" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="./images/tovar3.svg" alt="tovar3">
+                                        </div>
+                                        <div class="info">
+                                            <h3>Ігрова мишка Razer</h3>
+                                             <ul class="rating">
+                                                <li><ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                            </li>
+                                             </ul>
+                                            <div>
+                                                <div class="info-price"></div>
+                                            <span class="price">77$</span>
+                                            <button class="add-to-cart" onclick="addToCart({ name: 'Ігрова мишка Razer', price: 77 })">Додати до кошика</button>
+                                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="icon4" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="./images/tovar4.svg" alt="tovar4">
+                                        </div>
+                                        <div class="info">
+                                            <h3>Монітор Asus Tuf Gaming 144hz</h3>
+                                             <ul class="rating">
+                                                <li><ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                             </ul>
+                                            <div>
+                                                <div class="info-price"></div>
+                                            <span class="price">219$</span>
+                                            <button class="add-to-cart" onclick="addToCart({ name: 'Монітор Asus Tuf Gaming 144hz', price: 219 })">Додати до кошика</button>
+                                            </div>
+                            </div>
+                            <div class="icon5" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="./images/tovar5.svg" alt="tovar5">
+                                        </div>
+                                        <div class="info">
+                                            <h3>Patch-Cord</h3>
+                                             <ul class="rating">
+                                                <li><ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                             </ul>
+                                            <div>
+                                                <div class="info-price"></div>
+                                            <span class="price">27$</span>
+                                            <button class="add-to-cart" onclick="addToCart({ name: 'Patch-Cord', price: 27 })">Додати до кошика</button>
+                                            </div>
+                            </div>
+                            <div class="icon6" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="./images/tovar6.svg" alt="tovar6">
+                                        </div>
+                                        <div class="info">
+                                            <h3>Оперативка DDR5</h3>
+                                             <ul class="rating">
+                                                <li><ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </li>
+                                             </ul>
+                                            <div>
+                                                <div class="info-price"></div>
+                                            <span class="price">101$</span>
+                                            <button class="add-to-cart" onclick="addToCart({ name: 'Оперативка DDR5', price: 101 })">Додати до кошика</button>
+                                            </div>
+                            </div>
+                        </div>
+                    </main>
+
+                <div class="sidebar">
+
+                   <div class="nav">
+                   <h2 class="nav-title">Комплектуючі ПК</h2>
+                     <ul class="nav-list">
+                        <li><a href="#" target="_blank">Процесори</a></li><br>
+                        <li><a href="#" target="_blank">Відеокарти</a></li><br>
+                        <li><a href="#" target="_blank">Оперативна пам'ять</a></li><br>
+                        <li><a href="#" target="_blank">SSD/HDD</a></li><br>
+                        <li><a href="#" target="_blank">Блоки живлення</a></li><br>
+                        <li><a href="#" target="_blank">Материнські плати</a></li>
+                        <h3>Монітори</h3>
+                        <li><a href="#" target="_blank">60hz</a></li><br>
+                        <li><a href="#" target="_blank">75hz</a></li><br>
+                        <li><a href="#" target="_blank">144hz</a></li><br>
+                        <li><a href="#" target="_blank">288hz</a></li>
+                        <h3>Переферія</h3>
+                        <li><a href="#" target="_blank">Ігрові мишки</a></li><br>
+                        <li><a href="#" target="_blank">Клавіатури RGB</a></li><br>
+                        <li><a href="#" target="_blank">Коврики для мишки</a></li>
+                     </ul>
+                   </div>
+                </div>
+                <footer>
+                    <div class="column">
+                        <h3>Графік роботи:</h3>
+                        <p>Пн-Пт</p>
+                        <p>9:00-20:00</p>
+                        <p>Сб-Нд</p>
+                        <p>9:00-20:00</p>
+                    </div>
+                    <div class="column">
+                        <h3>Покупцям:</h3>
+                        <p>Обмін та повернення</p>
+                        <p>Доставка</p>
+                        <p>Гарантії</p>
+                        <p>Оплата</p>
+                    </div>
+                    <div class="column">
+                        <h3>Контакти:</h3>
+                        <p><img src="./images/telephone.svg" alt="трубка">+38(099)647-16-37</p>
+                        <p><img src="./images/telephone.svg" alt="трубка">+38(044)647-16-37</p>
+                           <p>expressparts4pc@ukr.net</p>
+                    </div>
+                    <div class="column">
+                        <p>Про нас</p>
+                        <p>Партнерство</p>
+                        <p><img src="./images/instagram-icon.svg" alt="our instagram">@expressparts4pc</p>
+                        <p><img src="./images/facebook-icon.svg" alt="our facebook">www.facebook.com/expressparts4pc</p>
+                    </div>
+                    <div class="column">
+                        <h3>Технічна підтримка</h3>
+                        </div>
+                </footer>
+                <script src="script.js"></script>
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </body>
+
+</html>
